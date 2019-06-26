@@ -8,7 +8,7 @@ Word Guessing Game using NodeJs
 * If the user gets all the letters in the word the user wins
 * If the user uses all of their guesses they lose
 
-:earth-americas:
+:earth_americas:
 
 
 
