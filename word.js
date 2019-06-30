@@ -1,5 +1,5 @@
 var Letter = require("./Letter")
-
+// split the word into letters
 function Word(word){
     this.letters = word.split("").map(function(char){
         return new Letter(char);

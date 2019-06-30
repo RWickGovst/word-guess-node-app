@@ -5,7 +5,7 @@ function Letter(char){
     this.char = char;
 
 }
-
+//  displays underscores
 Letter.prototype.toString = function(){
     if(this.visible === true){
         return this.char;

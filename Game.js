@@ -2,7 +2,7 @@ var inquirer = require("inquirer");
 var Word = require("./Word");
 var words = require("./words");
 
-
+// start the game, set guesses left, call random word function
 function Game() {
     var self = this;
     this.play = function(){
