@@ -1,0 +1,24 @@
+{
+  "name": "word-guess-node-app",
+  "version": "1.0.0",
+  "description": "Word Guessing Game using NodeJs",
+  "main": "index.js",
+  "dependencies": {
+    "inquirer": "^6.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RWickGovst/word-guess-node-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RWickGovst/word-guess-node-app/issues"
+  },
+  "homepage": "https://github.com/RWickGovst/word-guess-node-app#readme"
+}
