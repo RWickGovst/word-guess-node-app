@@ -12,7 +12,9 @@ Word Guessing Game using NodeJs
 
 :water_buffalo:
 
+![Game Play](./assets/game_play.png)
 
+![Game Play](./assets/game_play2.png)
 
 
 
