@@ -23,9 +23,9 @@ function Game() {
                 self.restartGame();
             }
             else if(self.currentWord.guessedCorrectly()){
-                console.log("you got it right. Move to next word");
+                console.log("You got it right!");
                 self.guessesLeft = 12;
-                self.randomWord();
+                self.restartGame();
             }
             else{
                 self.inquirerFunction();
@@ -44,14 +44,17 @@ function Game() {
                 }
             ]).then(function(val){
                 var didGuessCorrectly = self.currentWord.guessLetter(val.choice);
+                
+                console.log(val.choice);
+                
                 if(didGuessCorrectly){
                     console.log("correct");
                     self.guessesLeft--;
-                    console.log("guess left: " +self.guessesLeft);
+                    console.log("guess left: " + self.guessesLeft);
                 }else{
-                    console.log("IN correct");
+                    console.log("incorrect");
                     self.guessesLeft--;
-                    console.log("guess left: " +self.guessesLeft);
+                    console.log("guesses left: " + self.guessesLeft);
                 }
             })
     }

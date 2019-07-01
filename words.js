@@ -1,4 +1,4 @@
 // words for the guessing game
 module.exports = [
-    "Triumph", "Honda", "Kawasaki", "Suzuki"
+    "triumph", "honda", "kawasaki", "suzuki"
 ]
