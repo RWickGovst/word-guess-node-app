@@ -6,13 +6,15 @@ var words = require("./words");
 function Game() {
     var self = this;
     this.play = function(){
-        this.guessesLeft = 12;
+        this.guessesLeft = 10;
         this.randomWord();
     }
+    // pick a random word from the word array
     this.randomWord = function(){
         var randomWord = words[Math.floor(Math.random()*words.length)];
         // console.log("random word: " +randomWord);
         this.currentWord = new Word(randomWord);
+        // displays dashes
         console.log("currentWord: "+this.currentWord);
         this.startGuessing();
     }
@@ -37,6 +39,7 @@ function Game() {
 
         })
     }
+    // user interface
     this.inquirerFunction = function(){
         return inquirer
             .prompt([
@@ -63,6 +66,7 @@ function Game() {
                 }
             })
     }
+    // choose to quit or play again
     this.restartGame = function(){
         inquirer.prompt([
             {
