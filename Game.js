@@ -28,7 +28,9 @@ function Game() {
                 self.restartGame();
             }
             else{
+                // call to print underscores and correct letters
                 console.log("currentWord: "+ self.currentWord);
+                // get another letter guess from the user
                 self.startGuessing();
             }
             
