@@ -11,7 +11,7 @@ function Game() {
     }
     this.randomWord = function(){
         var randomWord = words[Math.floor(Math.random()*words.length)];
-        console.log("random word: " +randomWord);
+        // console.log("random word: " +randomWord);
         this.currentWord = new Word(randomWord);
         console.log("currentWord: "+this.currentWord);
         this.startGuessing();
@@ -24,7 +24,7 @@ function Game() {
             }
             else if(self.currentWord.guessedCorrectly()){
                 console.log("You got it right!");
-                self.guessesLeft = 12;
+                // self.guessesLeft = 12;
                 self.restartGame();
             }
             else{
@@ -44,13 +44,15 @@ function Game() {
                 }
             ]).then(function(val){
                 var didGuessCorrectly = self.currentWord.guessLetter(val.choice);
-                
-                console.log(val.choice);
+                // console.log(didGuessCorrectly);
+
+                // console.log(val.choice);
                 
                 if(didGuessCorrectly){
                     console.log("correct");
                     self.guessesLeft--;
-                    console.log("guess left: " + self.guessesLeft);
+                    console.log("guesses left: " + self.guessesLeft);
+
                 }else{
                     console.log("incorrect");
                     self.guessesLeft--;
