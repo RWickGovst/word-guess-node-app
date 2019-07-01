@@ -28,7 +28,8 @@ function Game() {
                 self.restartGame();
             }
             else{
-                self.inquirerFunction();
+                console.log("currentWord: "+ self.currentWord);
+                self.startGuessing();
             }
             
 
